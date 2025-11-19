@@ -51,6 +51,12 @@ jobs:
         working-directory: ./backend
         run: pnpm run db:generate
 
+      - name: Run Prisma migrations
+        working-directory: ./backend
+        env:
+          DATABASE_URL: postgresql://test:test@localhost:5432/test
+        run: pnpm run db:migrate:prod
+
       - name: Run tests
         working-directory: ./backend
         env:
