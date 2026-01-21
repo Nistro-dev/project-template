@@ -99,14 +99,13 @@ export const ResetPassword = () => {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#0a0a0a] px-4 py-12 "
-
-      <Card className="w-full max-w-md bg-[#111]  border-[#222] shadow-2xl animate-scale-in "
+    <div className="min-h-screen flex items-center justify-center bg-[#0a0a0a] px-4 py-12">
+      <Card className="w-full max-w-md bg-[#111] border border-[#222] shadow-xl animate-scale-in">
         <CardHeader className="space-y-3 text-center pb-6">
-          <div className="mx-auto w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center  mb-2">
+          <div className="mx-auto w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-2">
             <Sparkles className="w-6 h-6 text-white" />
           </div>
-          <CardTitle className="text-3xl font-bold font-display text-white">
+          <CardTitle className="text-3xl font-bold text-white">
             Nouveau mot de passe
           </CardTitle>
           <CardDescription className="text-base text-gray-400">
