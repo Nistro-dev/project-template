@@ -140,10 +140,10 @@ export const Profile = () => {
 
         <div className="space-y-6">
           {/* Profile Information */}
-          <Card className="animate-fade-in-up glass border-white/10">
+          <Card className="animate-fade-in-up bg-[#111] border-[#222]">
             <CardHeader>
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center glow">
+                <div className="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center ">
                   <User className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -228,10 +228,10 @@ export const Profile = () => {
           </Card>
 
           {/* Change Password */}
-          <Card className="animate-fade-in-up glass border-white/10" style={{ animationDelay: '0.1s' }}>
+          <Card className="animate-fade-in-up bg-[#111] border-[#222]" style={{ animationDelay: '0.1s' }}>
             <CardHeader>
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-600 rounded-xl flex items-center justify-center glow-pink">
+                <div className="w-12 h-12 bg-pink-600 rounded-xl flex items-center justify-center ">
                   <Lock className="w-6 h-6 text-white" />
                 </div>
                 <div>
