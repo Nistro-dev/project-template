@@ -112,15 +112,15 @@ export const Dashboard = () => {
   return (
     <div className="min-h-screen bg-[#0a0a0a]">
       {/* Header */}
-      <header className="glass-strong backdrop-blur-2xl border-b border-white/10 sticky top-0 z-40">
+      <header className="bg-[#111]  border-b border-[#222] sticky top-0 z-40">
         <div className="container mx-auto px-4 lg:px-8 py-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center glow">
+              <div className="w-10 h-10 bg-purple-600 rounded-xl flex items-center justify-center ">
                 <Files className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold font-display text-gradient">
+                <h1 className="text-2xl font-bold font-display text-white">
                   Tableau de bord
                 </h1>
                 <p className="text-sm text-gray-400">Gérez vos fichiers</p>
@@ -170,10 +170,10 @@ export const Dashboard = () => {
       <main className="container mx-auto px-4 lg:px-8 py-8">
         {/* Stats Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-          <Card hover className="animate-fade-in-up glass border-white/10">
+          <Card hover className="animate-fade-in-up bg-[#111] border-[#222]">
             <CardContent className="p-6">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center glow">
+                <div className="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center ">
                   <FileText className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -184,7 +184,7 @@ export const Dashboard = () => {
             </CardContent>
           </Card>
 
-          <Card hover className="animate-fade-in-up glass border-white/10" style={{ animationDelay: '0.1s' }}>
+          <Card hover className="animate-fade-in-up bg-[#111] border-[#222]" style={{ animationDelay: '0.1s' }}>
             <CardContent className="p-6">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-xl flex items-center justify-center shadow-md">
@@ -198,10 +198,10 @@ export const Dashboard = () => {
             </CardContent>
           </Card>
 
-          <Card hover className="animate-fade-in-up glass border-white/10" style={{ animationDelay: '0.2s' }}>
+          <Card hover className="animate-fade-in-up bg-[#111] border-[#222]" style={{ animationDelay: '0.2s' }}>
             <CardContent className="p-6">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-600 rounded-xl flex items-center justify-center glow-pink">
+                <div className="w-12 h-12 bg-pink-600 rounded-xl flex items-center justify-center ">
                   <TrendingUp className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -214,7 +214,7 @@ export const Dashboard = () => {
         </div>
 
         {/* Upload Section */}
-        <Card className="mb-8 animate-fade-in-up glass border-white/10" style={{ animationDelay: '0.3s' }}>
+        <Card className="mb-8 animate-fade-in-up bg-[#111] border-[#222]" style={{ animationDelay: '0.3s' }}>
           <CardHeader>
             <CardTitle className="text-xl font-bold text-white">Télécharger un fichier</CardTitle>
             <CardDescription className="text-gray-400">Glissez-déposez ou cliquez pour sélectionner</CardDescription>
@@ -225,7 +225,7 @@ export const Dashboard = () => {
         </Card>
 
         {/* Files List */}
-        <Card className="animate-fade-in-up glass border-white/10" style={{ animationDelay: '0.4s' }}>
+        <Card className="animate-fade-in-up bg-[#111] border-[#222]" style={{ animationDelay: '0.4s' }}>
           <CardHeader>
             <div className="flex items-center justify-between">
               <div>
@@ -254,11 +254,11 @@ export const Dashboard = () => {
                 {files.map((file, index) => (
                   <div
                     key={file.id}
-                    className="group flex items-center justify-between p-4 rounded-xl glass border-white/10 hover:border-purple-500/50 hover:bg-white/10 transition-all duration-300 hover-lift animate-fade-in"
+                    className="group flex items-center justify-between p-4 rounded-xl bg-[#111] border-[#222] hover:border-purple-500/50 hover:bg-white/10 transition-all duration-300 hover-lift animate-fade-in"
                     style={{ animationDelay: `${index * 0.05}s` }}
                   >
                     <div className="flex items-center gap-4 flex-1 min-w-0">
-                      <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center shadow-md flex-shrink-0">
+                      <div className="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center shadow-md flex-shrink-0">
                         <FileText className="w-6 h-6 text-white" />
                       </div>
                       <div className="flex-1 min-w-0">

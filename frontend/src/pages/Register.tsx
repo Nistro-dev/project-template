@@ -74,19 +74,13 @@ export const Register = () => {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#0a0a0a] px-4 py-12 relative overflow-hidden">
-      {/* Animated background */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '1.5s' }} />
-      </div>
-
-      <Card className="w-full max-w-2xl glass-strong backdrop-blur-2xl border-white/10 shadow-2xl animate-scale-in relative z-10">
+    <div className="min-h-screen flex items-center justify-center bg-[#0a0a0a] px-4 py-12">
+      <Card className="w-full max-w-2xl bg-[#111] border border-[#222] shadow-xl animate-scale-in">
         <CardHeader className="space-y-3 text-center pb-6">
-          <div className="mx-auto w-16 h-16 bg-gradient-to-br from-pink-500 to-purple-600 rounded-2xl flex items-center justify-center glow-pink mb-2">
-            <Sparkles className="w-8 h-8 text-white" />
+          <div className="mx-auto w-12 h-12 bg-pink-600 rounded-lg flex items-center justify-center mb-2">
+            <Sparkles className="w-6 h-6 text-white" />
           </div>
-          <CardTitle className="text-3xl font-bold font-display text-gradient">
+          <CardTitle className="text-3xl font-bold text-white">
             Créer un compte
           </CardTitle>
           <CardDescription className="text-base text-gray-400">

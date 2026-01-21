@@ -40,14 +40,6 @@
 }
 
 @layer utilities {
-  .glass {
-    @apply bg-white/5 backdrop-blur-lg border border-white/10;
-  }
-  
-  .glass-strong {
-    @apply bg-white/10 backdrop-blur-xl border border-white/20;
-  }
-  
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600;
   }
@@ -58,13 +50,5 @@
   
   .smooth-transition {
     @apply transition-all duration-300 ease-in-out;
-  }
-  
-  .glow {
-    @apply shadow-[0_0_30px_rgba(168,85,247,0.4)];
-  }
-  
-  .glow-pink {
-    @apply shadow-[0_0_30px_rgba(236,72,153,0.4)];
   }
 }
