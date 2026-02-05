@@ -25,7 +25,7 @@ async function start() {
         method: request.method,
         url: request.url,
         ip: request.ip,
-      });
+      }) as any;
       request.log.info("Request started");
     });
 
@@ -79,10 +79,6 @@ async function start() {
       },
       // X-Frame-Options
       frameguard: { action: "deny" },
-      // X-Content-Type-Options
-      contentTypeOptions: true,
-      // X-XSS-Protection
-      xssFilter: true,
       // Referrer Policy
       referrerPolicy: { policy: "strict-origin-when-cross-origin" },
       // Cross-Origin-Embedder-Policy
